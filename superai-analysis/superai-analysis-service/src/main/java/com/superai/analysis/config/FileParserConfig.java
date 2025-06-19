@@ -11,11 +11,12 @@ import java.util.stream.Collectors;
 
 /**
  * @author : XiaoBaiBai
- * @description : T
+ * @description : 文件解析组件映射器
  * @created : 2025/6/19
  **/
 @Configuration
 public class FileParserConfig {
+
     @Bean
     public Map<String, FileParser> parserMap(List<FileParser> parsers) {
         return parsers.stream().collect(Collectors.toMap(
