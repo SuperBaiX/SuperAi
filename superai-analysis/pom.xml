@@ -9,6 +9,7 @@
     </parent>
     <artifactId>superai-analysis</artifactId>
     <name>superai-analysis</name>
+    <packaging>pom</packaging>
 
     <modules>
         <module>superai-analysis-api</module>
