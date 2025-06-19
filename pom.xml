@@ -16,6 +16,7 @@
 
 
     <modules>
+        <module>superai-common</module>
         <module>superai-analysis</module>
 
     </modules>
