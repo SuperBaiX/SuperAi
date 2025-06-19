@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SuperaiAnalysisApplication {
+public class SuperaiAnalysisServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SuperaiAnalysisApplication.class, args);
+        SpringApplication.run(SuperaiAnalysisServiceApplication.class, args);
     }
 
 }
