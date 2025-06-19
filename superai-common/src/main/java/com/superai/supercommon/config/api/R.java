@@ -28,11 +28,11 @@ public class R<T> implements Serializable {
         this.success = ResultCode.SUCCESS.code == code;
     }
     private R(IResultCode resultCode) {
-        this(resultCode, (Object)null, resultCode.getMessage());
+        this(resultCode, (T) null, resultCode.getMessage());
     }
 
     private R(IResultCode resultCode, String msg) {
-        this(resultCode, (Object)null, msg);
+        this(resultCode, (T) null, msg);
     }
 
     private R(IResultCode resultCode, T data) {
@@ -82,7 +82,7 @@ public class R<T> implements Serializable {
     }
 
     public static <T> R<T> fail(int code, String msg) {
-        return new R<T>(code, (Object)null, msg);
+        return new R<T>(code, (T) null, msg);
     }
 
     public static <T> R<T> fail(IResultCode resultCode) {
