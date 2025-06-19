@@ -1,6 +1,7 @@
 package com.superai.analysis.service.parser;
 
-import com.superai.supercommon.config.api.R;
+import com.superai.analysis.enums.AnalysisFileTypeEnum;
+import com.superai.supercommon.core.api.R;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.io.IOException;
 public class TxtParser implements FileParser{
     @Override
     public String getSupportedExtension() {
-        return "txt";
+        return AnalysisFileTypeEnum.TXT_TYPE.getAnalysisStrategyName();
     }
 
     @Override

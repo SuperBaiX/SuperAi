@@ -1,9 +1,8 @@
-package com.superai.supercommon.config.api;
+package com.superai.supercommon.core.api;
 
 import java.io.Serializable;
 import java.util.Optional;
 
-import jakarta.annotation.Nullable;
 import org.springframework.util.ObjectUtils;
 
 /**
@@ -50,7 +49,7 @@ public class R<T> implements Serializable {
     }
 
     // 判断响应是否成功
-    public static boolean isSuccess(@Nullable R<?> result) {
+    public static boolean isSuccess(R<?> result) {
         return (Boolean) Optional.ofNullable(result)
                 .map((x) -> ObjectUtils.nullSafeEquals(ResultCode.SUCCESS.code, x.code))
                 .orElse(Boolean.FALSE); // 若结果为null，返回false

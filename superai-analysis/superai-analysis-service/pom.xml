@@ -31,14 +31,28 @@
         <dependency>
             <groupId>com.superai</groupId>
             <artifactId>superai-common</artifactId>
+            <version>${project-versions}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.superai</groupId>
+            <artifactId>superai-analysis-api</artifactId>
+            <version>${project-versions}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

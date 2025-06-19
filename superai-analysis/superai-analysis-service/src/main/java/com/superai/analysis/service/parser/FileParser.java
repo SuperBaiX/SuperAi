@@ -1,6 +1,6 @@
 package com.superai.analysis.service.parser;
 
-import com.superai.supercommon.config.api.R;
+import com.superai.supercommon.core.api.R;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;

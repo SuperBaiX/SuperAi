@@ -1,4 +1,4 @@
-package com.superai.supercommon.config.api;
+package com.superai.supercommon.core.api;
 
 /**
  * @author : XiaoBaiBai
